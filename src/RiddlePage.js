@@ -1,9 +1,11 @@
-import React from 'react';
+import React from "react";
 
-const RiddlePage = () => {
-	return (
-		<div>Riddle Page</div>
-	);
-}
+const RiddlePage = ({ num }) => {
+  return (
+    <div>
+      <p>Riddle Page #{num}</p>
+    </div>
+  );
+};
 
 export default RiddlePage;

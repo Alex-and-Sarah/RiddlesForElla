@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/RiddlesForElla/precache-manifest.f4a6f1f99dd164442051990bcc3dc934.js"
+  "/RiddlesForElla/precache-manifest.1df0260097f3b071bc2f3de86ac2b936.js"
 );
 
 self.addEventListener('message', (event) => {

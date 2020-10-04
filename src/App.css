@@ -1,9 +1,6 @@
 .App {
-	margin: auto;
-    display: flex;
-	justify-content: center;
 }
 
 .card {
-	width: 70%;
+  width: 70%;
 }
