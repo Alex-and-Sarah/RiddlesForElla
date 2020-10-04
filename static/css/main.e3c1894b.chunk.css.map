@@ -1,0 +1,1 @@
+{"version":3,"sources":["App.css"],"names":[],"mappings":"AAAA,KACC,WAAY,CACT,YAAa,CAChB,sBACD,CAEA,MACC,SACD","file":"main.e3c1894b.chunk.css","sourcesContent":[".App {\n\tmargin: auto;\n    display: flex;\n\tjustify-content: center;\n}\n\n.card {\n\twidth: 70%;\n}"]}
