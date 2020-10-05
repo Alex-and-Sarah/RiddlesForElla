@@ -8,7 +8,6 @@ const IntroCard = () => {
   return (
     <div className="card">
       <div className="card-content black-text">
-        <span className="card-title">Загадки Эллы</span>
         <p>{introText}</p>
       </div>
     </div>
