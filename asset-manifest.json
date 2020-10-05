@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/RiddlesForElla/static/css/main.c4d4c446.chunk.css",
-    "main.js": "/RiddlesForElla/static/js/main.0dfa4146.chunk.js",
-    "main.js.map": "/RiddlesForElla/static/js/main.0dfa4146.chunk.js.map",
+    "main.js": "/RiddlesForElla/static/js/main.c09b8eab.chunk.js",
+    "main.js.map": "/RiddlesForElla/static/js/main.c09b8eab.chunk.js.map",
     "runtime-main.js": "/RiddlesForElla/static/js/runtime-main.060eb89b.js",
     "runtime-main.js.map": "/RiddlesForElla/static/js/runtime-main.060eb89b.js.map",
     "static/js/2.8c998990.chunk.js": "/RiddlesForElla/static/js/2.8c998990.chunk.js",
     "static/js/2.8c998990.chunk.js.map": "/RiddlesForElla/static/js/2.8c998990.chunk.js.map",
     "index.html": "/RiddlesForElla/index.html",
-    "precache-manifest.173db4c9ebe9f9e2c66a6815fea58722.js": "/RiddlesForElla/precache-manifest.173db4c9ebe9f9e2c66a6815fea58722.js",
+    "precache-manifest.02bc7d3e1a4af4eaf4d20ad2d72e7647.js": "/RiddlesForElla/precache-manifest.02bc7d3e1a4af4eaf4d20ad2d72e7647.js",
     "service-worker.js": "/RiddlesForElla/service-worker.js",
     "static/css/main.c4d4c446.chunk.css.map": "/RiddlesForElla/static/css/main.c4d4c446.chunk.css.map",
     "static/js/2.8c998990.chunk.js.LICENSE.txt": "/RiddlesForElla/static/js/2.8c998990.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.060eb89b.js",
     "static/js/2.8c998990.chunk.js",
     "static/css/main.c4d4c446.chunk.css",
-    "static/js/main.0dfa4146.chunk.js"
+    "static/js/main.c09b8eab.chunk.js"
   ]
 }
