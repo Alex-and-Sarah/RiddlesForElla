@@ -40,6 +40,10 @@ img {
 	margin-top: 40px;
 }
 
+.pagination li.active{
+	background-color: #ff80ab;
+}
+
 .pagination li {
 	height: 35px;
 }
