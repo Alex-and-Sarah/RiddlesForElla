@@ -1,5 +1,4 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import React, { useState } from "react";
 import "./App.css";
 import RiddlePage from "./RiddlePage";
 import { introText } from "./riddles";
@@ -12,60 +11,58 @@ const IntroCard = () => {
         <span className="card-title">Загадки Эллы</span>
         <p>{introText}</p>
       </div>
-      <div className="card-action">
-        <a className="waves-effect waves-light btn" href="/1">
-          Идти
-        </a>
-      </div>
     </div>
   );
 };
 
 const App = () => {
-  console.log(riddles.length);
+  const [currPage, setCurrPage] = useState(0);
+  console.log(currPage);
   return (
     <div className="App">
-      <Router>
-        <Switch>
-          <Route
-            path="/RiddlesForElla/"
-            exact
-            component={() => <IntroCard />}
-          />
+      {currPage ? <RiddlePage num={currPage} /> : <IntroCard />}
 
-          {[...Array(riddles.length)].map((e, i) => (
-            <Route
-              key={i + 1}
-              path={`/RiddlesForElla/${i + 1}`}
-              exact
-              component={() => <RiddlePage num={i + 1} />}
-            />
-          ))}
-        </Switch>
+      <ul className="pagination">
+        <li className={currPage ? "waves-effect" : "disabled"}>
+          <a onClick={() => currPage > 0 && setCurrPage(currPage - 1)}>
+            <i className="material-icons">chevron_left</i>
+          </a>
+        </li>
+        <li className={currPage === 0 ? "active" : "waves-effect"}>
+          <a onClick={() => setCurrPage(0)}>Intro</a>
+        </li>
 
-        <ul className="pagination">
-          <li className="disabled">
-            <a href="#!">
-              <i className="material-icons">chevron_left</i>
-            </a>
-          </li>
-          <li className="active">
-            <a href="/RiddlesForElla/">Intro</a>
-          </li>
-
-          {[...Array(riddles.length)].map((e, i) => (
-            <li className="waves-effect" key={i}>
-              <a href={`/RiddlesForElla/${i + 1}`}>{i + 1}</a>
+        {[...Array(riddles.length)].map((e, i) => {
+          const num = i + 1;
+          return (
+            <li
+              className={currPage === num ? "active" : "waves-effect"}
+              key={num}
+            >
+              <a
+                onClick={() => {
+                  setCurrPage(num);
+                  return false;
+                }}
+              >
+                {num}
+              </a>
             </li>
-          ))}
+          );
+        })}
 
-          <li className="waves-effect">
-            <a href="#!">
-              <i className="material-icons">chevron_right</i>
-            </a>
-          </li>
-        </ul>
-      </Router>
+        <li
+          className={currPage === riddles.length ? "disabled" : "waves-effect"}
+        >
+          <a
+            onClick={() =>
+              currPage < riddles.length && setCurrPage(currPage + 1)
+            }
+          >
+            <i className="material-icons">chevron_right</i>
+          </a>
+        </li>
+      </ul>
     </div>
   );
 };
