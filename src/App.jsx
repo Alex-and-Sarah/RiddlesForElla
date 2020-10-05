@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import RiddlePage from "./RiddlePage";
 import { introText } from "./riddles";
@@ -16,10 +16,17 @@ const IntroCard = () => {
 
 const App = () => {
   const [currPage, setCurrPage] = useState(0);
-  console.log(currPage);
+  const [open, setOpen] = useState(false);
+
+  useEffect(() => setOpen(false), [currPage]);
+
   return (
     <div className="App">
-      {currPage ? <RiddlePage num={currPage} /> : <IntroCard />}
+      {currPage ? (
+        <RiddlePage num={currPage} open={open} setOpen={setOpen} />
+      ) : (
+        <IntroCard />
+      )}
 
       <ul className="pagination">
         <li className={currPage ? "waves-effect" : "disabled"}>

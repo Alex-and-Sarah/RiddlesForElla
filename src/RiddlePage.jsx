@@ -1,27 +1,26 @@
 import React from "react";
 import riddles from "./riddles";
 
-const RiddlePage = ({ num }) => {
+const RiddlePage = ({ num, open, setOpen }) => {
   return (
-    <div class="card">
-      <div class="card-content">
-        <span class="card-title activator grey-text text-darken-4">
-          <a class="activator waves-effect waves-light btn right green darken-1">
-		  	показывай	
-          </a>
-        </span>
+    <div className={open ? "card open" : "card"}>
+      <div className="card-content">
+        <a
+          className="waves-effect waves-light btn right green darken-1"
+          onClick={() => setOpen(true)}
+        >
+          Ответ
+        </a>
         <p>{riddles[num - 1].riddleText}</p>
       </div>
-      <div class="card-reveal">
-        <span class="card-title grey-text text-darken-4">
-          <a class="btn-floating btn-large waves-effect waves-light red right">
-            <i class="material-icons">close</i>
-          </a>
-        </span>
-        <img
-          class="activator"
-          src={`/RiddlesForElla/images/${riddles[num - 1].answerPhoto}`}
-        />
+      <div className={open ? "card-reveal open" : "card-reveal"}>
+        <a
+          className="btn-floating btn-large waves-effect waves-light red right"
+          onClick={() => setOpen(false)}
+        >
+          <i className="material-icons">close</i>
+        </a>
+        <img src={`/RiddlesForElla/images/${riddles[num - 1].answerPhoto}`} />
       </div>
     </div>
   );

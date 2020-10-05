@@ -24,10 +24,10 @@ img {
 }
 
 .btn {
-	font-size: 24px;
+	font-size: 28px;
 	font-weight: bold;
 	height: 100%;
-	padding: 10px 20px;
+	padding: 20px;
 	border-radius: 50px;
 }
 
@@ -45,8 +45,18 @@ img {
 }
 
 .card {
-	width: 90%;
+	width: 80%;
 	margin: 0 auto;
 	margin-top: 20px;
 	height: 700px;
+	overflow: visible;
+}
+
+.card.open {
+	overflow: hidden;
+}
+
+.card-reveal.open {
+	display: block;
+	transform: translateY(-100%);
 }
