@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "90717f11a92948fc90289aa71716be6d",
+    "revision": "63604a205315ea4b5b057dfc3dfacb00",
     "url": "/RiddlesForElla/index.html"
   },
   {
-    "revision": "7cdf4fb141f8aadc0e36",
+    "revision": "b16a90a2be0ee6bd9804",
     "url": "/RiddlesForElla/static/css/main.c4d4c446.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/RiddlesForElla/static/js/2.8c998990.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7cdf4fb141f8aadc0e36",
-    "url": "/RiddlesForElla/static/js/main.0dfa4146.chunk.js"
+    "revision": "b16a90a2be0ee6bd9804",
+    "url": "/RiddlesForElla/static/js/main.c09b8eab.chunk.js"
   },
   {
     "revision": "3dc0d9176152f9c709e6",
