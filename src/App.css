@@ -1,6 +1,6 @@
 p {
 	white-space: pre-wrap;
-	font-size: 40px;
+	font-size: 36px;
 	margin: 0;
 	position: absolute;
 	top: 50%;
@@ -31,6 +31,12 @@ img {
 	border-radius: 50px;
 }
 
+.answer-btns{
+	display: inline-grid;
+	float: right;
+	grid-gap: 10px;
+}
+
 .pagination li a {
 	font-size: 32px;
 }
@@ -52,7 +58,7 @@ img {
 	width: 80%;
 	margin: 0 auto;
 	margin-top: 20px;
-	height: 700px;
+	height: 750px;
 	overflow: visible;
 }
 
