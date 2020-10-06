@@ -35,7 +35,7 @@ const App = () => {
           </a>
         </li>
         <li className={currPage === 0 ? "active" : "waves-effect"}>
-          <a onClick={() => setCurrPage(0)}>Intro</a>
+          <a onClick={() => setCurrPage(0)}>Начало</a>
         </li>
 
         {[...Array(riddles.length)].map((e, i) => {
