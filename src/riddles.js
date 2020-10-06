@@ -124,6 +124,6 @@ export default [
   {
     riddleText: riddleTexts[10],
     answerPhoto: "11_денрь_рождения.jpg",
-    answerPhoto2: "5_вертолёт.jpg",
+    answerPhoto2: "11_Третий_год.jpg",
   },
 ];
